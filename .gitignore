@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 
 dummyData.js
+
+*.env
+*.env.example
+*.env.local
+*.env.staging
