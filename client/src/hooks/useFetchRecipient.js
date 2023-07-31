@@ -9,7 +9,7 @@ export const useFetchRecipientUser = (chat, user) => {
 
     useEffect(() => {
         const getUser = async() => {
-            if(!recipientId) return null
+            if(!recipientId) return null;
 
             const response = await getRequest(`${baseUrl}/users/find/${recipientId}`)
 
@@ -19,8 +19,8 @@ export const useFetchRecipientUser = (chat, user) => {
 
             setRecipientUser(response);
         }
-        getUser()
-    }, [])
+        getUser() 
+    }, [recipientId]);
 
     return {recipientUser, error};
 }

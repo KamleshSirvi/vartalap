@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import { chatContext } from "../../context/ChatContext";
+import { ChatContext } from "../../context/ChatContext";
 import { AuthContext } from "../../context/AuthContext";
 
 const PotentialChats = () => {
     const {user} = useContext(AuthContext);
-  const { potentialChats, createChat } = useContext(chatContext);
+  const { potentialChats, createChat } = useContext(ChatContext);
 
-  console.log("pchats", potentialChats);
+  // console.log("pchats", potentialChats);
 
   return (
     <>
